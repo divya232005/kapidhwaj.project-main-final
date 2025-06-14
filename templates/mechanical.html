@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{name}} - Mechanical Engineer Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="templates/mechanical.css">
+</head>
+<body>
+    <div class="portfolio-container">
+        <aside class="sidebar">
+            <div class="profile-photo">
+                {{imgSrc}}
+            </div>
+            <h1 class="name">{{name}}</h1>
+            <p class="role">{{type}}</p>
+            <nav class="side-nav">
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#workex">Experience</a>
+                <a href="#education">Education</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </aside>
+        <main class="main-content">
+            <section class="about-section card" id="about">
+                <h2>About Me</h2>
+                <p>{{intro}}</p>
+            </section>
+            <section class="skills-section card" id="skills">
+                <h2>Technical Skills</h2>
+                <ul class="skills-list">
+                    {{skills}}
+                </ul>
+            </section>
+            <section class="experience-section card" id="workex">
+                <h2>Work Experience</h2>
+                <ul>
+                    {{workex}}
+                </ul>
+            </section>
+            <section class="education-section card" id="education">
+                <h2>Education</h2>
+                <ul>
+                    {{education}}
+                </ul>
+            </section>
+            <section class="projects-section card" id="projects">
+                <h2>Key Projects</h2>
+                <ul>
+                    {{projects}}
+                </ul>
+            </section>
+            <section class="contact-section card" id="contact">
+                <h2>Contact</h2>
+                <div class="contact-info">
+                    <div>Email: <a href="mailto:{{email}}">{{email}}</a></div>
+                    <div>Phone: <a href="tel:{{phone}}">{{phone}}</a></div>
+                </div>
+                <div class="contact-links">
+                    <a class="contact-btn linkedin-btn" href="{{linkedin}}" target="_blank" rel="noopener">LinkedIn</a>
+                    <a class="contact-btn github-btn" href="{{github}}" target="_blank" rel="noopener">GitHub</a>
+                    <a class="contact-btn resume-btn" href="{{resume}}" target="_blank" rel="noopener">Resume</a>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
